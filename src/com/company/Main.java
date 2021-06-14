@@ -1,28 +1,70 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
-        {
-            int[] array_nums = {5, 7, 2, 4, 9};
-            System.out.println("Original Array: "+ Arrays.toString(array_nums));
-            int max = array_nums[0];
-            int min = array_nums[0];
-            float sum = array_nums[0];
-            for(int i = 1; i < array_nums.length; i++)
-            {
-                sum  += array_nums[i];
-                if(array_nums[i] > max)
-                    max = array_nums[i];
-                else if(array_nums[i] < min)
-                    min = array_nums[i];
+    public class CheckOddEven {
+
+        public static void main(String[] args) {
+            int number = 49;
+            System.out.println("The number is " + number);
+            if (odd number ){
+                System.out.println( odd number );
+            } else{
+                System.out.println( Even number );
             }
-            float x = ((sum-max-min) / (array_nums.length - 2));
-            System.out.printf("Compute the average value of an array of integers except the largest and smallest values: %.2f",x);
-            System.out.print("\n");
+            System.out.println( bye );
         }
     }
+
+    public static void SumAverageInt(){
+        int nr;
+        int total = 0;
+
+        for (nr = 1; nr <= 100; nr++) {
+            total = total + nr;
+        }
+        System.out.println(total);
+
+        int initialSum = 0;
+        double averageSum;
+        for (int number = 1; number <= nr-1; ++number) {
+            initialSum += number;
+        }
+        averageSum= initialSum/nr-1;
+        System.out.println("The sum = "+initialSum);
+        System.out.println("The average = "+ averageSum);
+
+    }
+
+
+    public class CheckPerfectSquare
+    {
+
+        static boolean checkPerfectSquare(double number)
+        {
+
+            double sqrt=Math.sqrt(number);
+
+            return ((sqrt - Math.floor(sqrt)) == 0);
+        }
+
+        public static void main(String[] args)
+        {
+            System.out.print("6");
+//object of the Scanner class
+            Scanner sc=new Scanner(System.in);
+//reading a number of type double from the user
+            double number=sc.nextDouble();
+//calling the user defined method
+            if (checkPerfectSquare(number))
+                System.out.print("Yes, the given number is perfect square.");
+            else
+                System.out.print("No, the given number is not perfect square.");
+        }
+    }
+
+
 }

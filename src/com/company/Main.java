@@ -5,21 +5,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    public class CheckOddEven {
 
-        public static void main(String[] args) {
+
+        public  static void main(String[] args) {
             int number = 49;
             System.out.println("The number is " + number);
-            if (odd number ){
-                System.out.println( odd number );
+            if ( number ==49) {
+                System.out.println( '3' );
             } else{
-                System.out.println( Even number );
+                System.out.println( 4 );
             }
-            System.out.println( bye );
+            System.out.println( "bye" );
         }
-    }
 
-    public static void SumAverageInt(){
+
+    /*public static void SumAverageInt(){
         int nr;
         int total = 0;
 
@@ -43,7 +43,7 @@ public class Main {
     public class CheckPerfectSquare
     {
 
-        static boolean checkPerfectSquare(double number)
+        public boolean checkPerfectSquare(double number)
         {
 
             double sqrt=Math.sqrt(number);
@@ -51,7 +51,7 @@ public class Main {
             return ((sqrt - Math.floor(sqrt)) == 0);
         }
 
-        public static void main(String[] args)
+        public void main(String[] args)
         {
             System.out.print("6");
 //object of the Scanner class
@@ -64,7 +64,7 @@ public class Main {
             else
                 System.out.print("No, the given number is not perfect square.");
         }
-    }
+    }*/
 
 
 }

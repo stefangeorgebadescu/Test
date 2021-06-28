@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Exercitiu7 {
@@ -11,12 +12,18 @@ public class Exercitiu7 {
 
         int[] arr=new int[10];
         ArrayList arrayList=new ArrayList();
+
         for(int i=0;i<10;i++){
             arr[i]=rand.nextInt(100);
             if (arr[i]>=10){
                 arrayList.add(arr[i]);
             }
         }
+        System.out.println(Arrays.toString(arr));
         System.out.println(arrayList);
-    }}
+
+
+
+        }
+    }
 
